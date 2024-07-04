@@ -31,7 +31,7 @@ const OurWork = () => {
     return (
         <div className='bg-rich-black relative'>
             <div className='max-w-[1194px] mx-auto px-3 py-32 relative'>
-                <h2 className='font-bold text-5xl leading-116 tracking-tight text-center text-white mb-16'>
+                <h2 className='font-bold text-3xl sm:text-4xl md:text-5xl leading-116 tracking-tight text-center text-white mb-8 sm:mb-10 md:mb-12 lg:mb-16'>
                     Our Work Process
                 </h2>
                 <div className='flex lg:flex-col justify-center md:justify-start md:flex-row flex-row-reverse gap-6 md:gap-[55px] lg:gap-[52px] sm:max-w-[415px] max-w-[400px]  md:max-w-[768px] mx-auto lg:max-w-[unset] lg:mx-0'>
@@ -70,7 +70,7 @@ const OurWork = () => {
                                 <div className='sm:w-[54px] w-[40px] h-[40px] sm:h-[54px] flex items-center justify-center rounded-full bg-yankees-blue relative z-[2]'>
                                 <div key={index} className=' text-white leading-125 text-xl sm:text-2xl '>
                                     <span
-                                        className={`absolute z-[-1] hidden xxs:block ${index % 2 === 0 ? 'md:top-[3%] top-0 sm:top-[15%] rotate-90 md:-rotate-90 lg:rotate-0 lg:top-[-100%] left-[100%]  xxs:left-[132%] md:left-[-58%] lg:left-[45%]' : 'lg:top-[100%] top-0 sm:top-[15%] md:top-[1%] left-[132%] md:left-[146%] lg:left-[45%] rotate-90 md:rotate-90 lg:rotate-180'}`}
+                                        className={`absolute z-[-1] hidden xxs:block ${index % 2 === 0 ? 'md:top-[3%] top-0 sm:top-[15%] rotate-90 md:-rotate-90 lg:rotate-0 lg:top-[-100%] sm:left-[132%]  left-[142%] md:left-[-58%] lg:left-[45%]' : 'lg:top-[100%] top-0 sm:top-[15%] md:top-[1%] sm:left-[132%] left-[142%] md:left-[146%] lg:left-[45%] rotate-90 md:rotate-90 lg:rotate-180'}`}
                                         ref={el => cardLines.current[index] = el}
                                     >
                                         <CardLine />
