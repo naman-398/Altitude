@@ -55,7 +55,7 @@ const OurWork = () => {
                                 { img: '/assets/images/svg/screwDriver.svg', text: 'Construction begins! (Most projects completed in 1 day!)' }
                             ].map((card, index) => (
                                 <div ref={el => cards.current[index + 3] = el} key={index + 3}>
-                                    <div className='p-4 md:p-6 bg-eerie-black rounded-xl max-w-[300px] md:min-h-[190px] relative'>
+                                    <div className='xxs:p-4 p-3 md:p-6 bg-eerie-black rounded-xl max-w-[280px] xxs:max-w-[300px] md:min-h-[190px] relative'>
                                         <Image src={card.img} alt="letterboard" width={40} height={40} />
                                         <p className='font-medium text-base sm:text-lg md:text-xl !leading-130 text-white mt-3 sm:mt-4 md:mt-6'>{card.text}</p>
                                     </div>
@@ -90,7 +90,7 @@ const OurWork = () => {
                             { img: '/assets/images/svg/screwDriver.svg', text: 'Construction begins! (Most projects completed in 1 day!)' }
                         ].map((card, index) => (
                             <div ref={el => cards.current[index + 6] = el} key={index + 6}>
-                                <div className='p-4 md:p-6 bg-eerie-black rounded-xl max-w-[300px] md:min-h-[190px] relative'>
+                                <div className='xxs:p-4 p-3 md:p-6 bg-eerie-black rounded-xl max-w-[280px] xxs:max-w-[300px] md:min-h-[190px] relative'>
                                     <Image src={card.img} alt="letterboard" width={40} height={40} />
                                     <p className='font-medium text-base sm:text-lg md:text-xl !leading-130 text-white mt-3 sm:mt-4 md:mt-6'>{card.text}</p>
                                 </div>
