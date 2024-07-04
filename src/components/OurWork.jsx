@@ -67,8 +67,8 @@ const OurWork = () => {
                         <hr ref={hrRef} className=' bg-outer-space h-[700px] sm:h-[750px] md:h-[666px] lg:h-[1px] absolute lg:relative z-[0] top-0 md:top-[-3.5%] lg:left-[unset] lg:top-[unset] left-[48%] translate-y-[28px] w-[1px] lg:w-full' />
                         <div className='flex gap-[105px] sm:gap-[95px] md:gap-[70px] lg:gap-[135px] flex-col lg:flex-row xl:gap-[120px] items-center relative z-[2]'>
                             {[...Array(6)].map((_, index) => (
-                                <div className='sm:w-[54px] w-[40px] h-[40px] sm:h-[54px] flex items-center justify-center rounded-full bg-yankees-blue relative z-[2]'>
-                                <div key={index} className=' text-white leading-125 text-xl sm:text-2xl '>
+                                <div key={index} className='sm:w-[54px] w-[40px] h-[40px] sm:h-[54px] flex items-center justify-center rounded-full bg-yankees-blue relative z-[2]'>
+                                <div  className=' text-white leading-125 text-xl sm:text-2xl '>
                                     <span
                                         className={`absolute z-[-1] hidden xxs:block ${index % 2 === 0 ? 'md:top-[3%] top-0 sm:top-[15%] rotate-90 md:-rotate-90 lg:rotate-0 lg:top-[-100%] sm:left-[132%]  left-[142%] md:left-[-58%] lg:left-[45%]' : 'lg:top-[100%] top-0 sm:top-[15%] md:top-[1%] sm:left-[132%] left-[142%] md:left-[146%] lg:left-[45%] rotate-90 md:rotate-90 lg:rotate-180'}`}
                                         ref={el => cardLines.current[index] = el}
