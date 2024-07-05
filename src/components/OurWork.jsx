@@ -34,7 +34,7 @@ const OurWork = () => {
                 <h2 className='font-bold text-3xl sm:text-4xl md:text-5xl leading-116 tracking-tight text-center text-white mb-8 sm:mb-10 md:mb-12 lg:mb-16'>
                     Our Work Process
                 </h2>
-                <div className='flex lg:flex-col justify-center md:justify-start md:flex-row flex-row-reverse gap-6 md:gap-[55px] lg:gap-[52px] sm:max-w-[415px] max-w-[400px]  md:max-w-[768px] mx-auto lg:max-w-[unset] lg:mx-0'>
+                <div className='flex lg:flex-col justify-center md:justify-start md:flex-row flex-row-reverse gap-6 md:gap-[55px] lg:gap-[52px] sm:max-w-[415px] max-w-[380px] xxs:max-w-[400px]  md:max-w-[768px] mx-auto lg:max-w-[unset] lg:mx-0'>
                     <div className='flex items-center flex-col lg:flex-row gap-4 md:gap-12 xl:justify-start justify-center'>
                         {[
                             { img: '/assets/images/svg/letterBoard.svg', text: 'Inspect property for storm damage or quote preparation.' },
@@ -42,7 +42,7 @@ const OurWork = () => {
                             { img: '/assets/images/svg/stockScreen.svg', text: 'Production Planning (permitting/scheduling)' }
                         ].map((card, index) => (
                             <div ref={el => cards.current[index] = el} key={index}>
-                                <div className='xxs:p-4 p-3 md:p-6 bg-eerie-black rounded-xl max-w-[280px] xxs:max-w-[300px] md:min-h-[190px] relative'>
+                                <div className='xxs:p-4 p-3 md:p-6 bg-eerie-black rounded-xl max-w-[280px] xxs:max-w-[300px] min-h-[138px] md:min-h-[190px] relative'>
                                     <Image src={card.img} alt="letterboard" width={40} height={40} />
                                     <p className='font-medium text-base sm:text-lg md:text-xl !leading-130 text-white mt-3 sm:mt-4 md:mt-6'>{card.text}</p>
                                 </div>
@@ -55,7 +55,7 @@ const OurWork = () => {
                                 { img: '/assets/images/svg/screwDriver.svg', text: 'Construction begins! (Most projects completed in 1 day!)' }
                             ].map((card, index) => (
                                 <div ref={el => cards.current[index + 3] = el} key={index + 3}>
-                                    <div className='xxs:p-4 p-3 md:p-6 bg-eerie-black rounded-xl max-w-[280px] xxs:max-w-[300px] md:min-h-[190px] relative'>
+                                    <div className='xxs:p-4 p-3 md:p-6 bg-eerie-black rounded-xl max-w-[280px] xxs:max-w-[300px] min-h-[138px] md:min-h-[190px] relative'>
                                         <Image src={card.img} alt="letterboard" width={40} height={40} />
                                         <p className='font-medium text-base sm:text-lg md:text-xl !leading-130 text-white mt-3 sm:mt-4 md:mt-6'>{card.text}</p>
                                     </div>
@@ -63,9 +63,9 @@ const OurWork = () => {
                             ))}
                         </div>
                     </div>
-                    <div className='xl:max-w-[924px] lg:max-w-[996px] mx-auto xl:mx-0  relative'>
-                        <hr ref={hrRef} className=' bg-outer-space h-[700px] sm:h-[750px] md:h-[666px] lg:h-[1px] absolute lg:relative z-[0] top-0 md:top-[-3.5%] lg:left-[unset] lg:top-[unset] left-[48%] translate-y-[28px] w-[1px] lg:w-full' />
-                        <div className='flex gap-[105px] sm:gap-[95px] md:gap-[70px] lg:gap-[135px] flex-col lg:flex-row xl:gap-[120px] items-center relative z-[2]'>
+                    <div className='xl:max-w-[924px] lg:max-w-[996px] mr-auto xxs:mx-auto xl:mx-0  relative'>
+                        <hr ref={hrRef} className=' bg-outer-space h-[775px] sm:h-[750px] md:h-[666px] lg:h-[1px] absolute lg:relative z-[0] top-0 md:top-[-3.5%] lg:left-[unset] lg:top-[unset] left-[48%] translate-y-[28px] w-[1px] lg:w-full' />
+                        <div className='flex gap-[118px] sm:gap-[100px] md:gap-[70px] lg:gap-[135px] flex-col lg:flex-row xl:gap-[120px] items-center relative z-[2]'>
                             {[...Array(6)].map((_, index) => (
                                 <div key={index} className='sm:w-[54px] w-[40px] h-[40px] sm:h-[54px] flex items-center justify-center rounded-full bg-yankees-blue relative z-[2]'>
                                 <div  className=' text-white leading-125 text-xl sm:text-2xl '>
