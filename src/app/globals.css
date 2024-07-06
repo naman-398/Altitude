@@ -6,3 +6,12 @@
 body {
   font-family: "Inter", sans-serif;
 }
+.card {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.card.visible {
+  opacity: 1;
+}
+
